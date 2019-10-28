@@ -1,0 +1,20 @@
+<div class="container" style="background-color: #ccc;">
+  <br>
+  <br>
+  <br>
+  <div class="row">
+      <div class="col-sm2">
+          <input class="form-control" type="text" name="composant" [(ngModel)]="composant">
+          <button (click)="onAddComposant()">add</button>
+      </div>
+      <div class="col-sm10">
+        composants : {{ composants | json }}
+      </div>
+  </div>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+</div>

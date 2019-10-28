@@ -1,0 +1,10 @@
+<form #f="ngForm" (ngSubmit)="onSubmit()">
+
+name : <input type="text" name="name"  [(ngModel)]="name">
+email : <input type="text" name="email"   [(ngModel)]="email">
+address : <input type="text" name="address"  [(ngModel)]="address" required>
+matricule : <input type="text"  name="matricule" [(ngModel)]="matricule" pattern="[a-zA-Z]">
+<button>Submit</button>
+</form>
+
+{{form.form.value | json }}
